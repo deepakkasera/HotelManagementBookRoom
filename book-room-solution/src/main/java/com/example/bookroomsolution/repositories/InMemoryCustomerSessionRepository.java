@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
-public class InMemoryCustomerService implements CustomerSessionRepository {
+public class InMemoryCustomerSessionRepository implements CustomerSessionRepository {
     private Map<Long, CustomerSession> customerSessionMap;
     private static long idCounter = 0;
 
-    public InMemoryCustomerService() {
+    public InMemoryCustomerSessionRepository() {
         customerSessionMap = new HashMap<>();
     }
 
